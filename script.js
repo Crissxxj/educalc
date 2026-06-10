@@ -1,6 +1,4 @@
-// =============================================
 // EduCalc - Calculadora de Promedio Estudiantil
-// =============================================
 
 // --- VARIABLES ---
 var contador = 0;                  // número: lleva el conteo de materias
@@ -101,9 +99,7 @@ function mostrarResultados(nombre, materias) {
   });
 }
 
-// =============================================
 // EVENTOS - jQuery espera a que el DOM esté listo
-// =============================================
 $(document).ready(function() {
 
   // Cargar 3 materias por defecto

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EduCalc</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>📘 Edu<strong>Calc</strong></h1>
+    <p>Calculadora de promedio estudiantil</p>
+  </header>
+
+  <main>
+
+    <!-- FORMULARIO -->
+    <section class="card" id="seccion-form">
+      <h2>Ingresa tus datos</h2>
+
+      <label>Nombre del estudiante</label>
+      <input type="text" id="nombre" placeholder="Ej: María García" />
+
+      <div id="lista-materias"></div>
+
+      <button id="btn-agregar">+ Agregar materia</button>
+      <button id="btn-calcular">Calcular promedio</button>
+      <p id="error" class="oculto"></p>
+    </section>
+
+    <!-- RESULTADOS -->
+    <section class="card oculto" id="seccion-resultado">
+      <h2>Resultados de <span id="res-nombre"></span></h2>
+
+      <div class="promedio-box">
+        <span>Promedio final</span>
+        <strong id="res-promedio"></strong>
+      </div>
+
+      <p id="res-estado" class="estado"></p>
+
+      <h3>Detalle por materia</h3>
+      <table>
+        <thead><tr><th>Materia</th><th>Nota</th><th>Estado</th></tr></thead>
+        <tbody id="tabla-body"></tbody>
+      </table>
+
+      <div id="res-bajas" class="oculto">
+        <h3>⚠️ Materias con nota baja</h3>
+        <ul id="lista-bajas"></ul>
+      </div>
+
+      <button id="btn-volver">← Calcular de nuevo</button>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>EduCalc &copy; 2025 — Herramienta de apoyo académico</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
